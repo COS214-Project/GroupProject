@@ -10,9 +10,16 @@ class Car {
 private:
 	CarPart** parts;
 	string name;
+	string driver;
+	string team;
+	string testdriver;
+	int position;
+	long qualifyingtime;
 
 public:
 	Car();
+	
+	Car(string n, string d, string td, string t);
 
 	~Car();
 
@@ -25,6 +32,23 @@ public:
 	string getName();
 
 	void setName(string name);
+	
+	string getDriver();
+	
+	string getTestDriver();
+	
+	string getTeam();
+	
+	int getPosition();
+	
+	void setPosition();
+	
+	long getTime();
+	
+	void setTime();
+	
+	
+	
 };
 
 #endif
