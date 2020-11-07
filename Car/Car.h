@@ -50,7 +50,7 @@ public:
 	
 	int getPoints();
 	
-	void setPoints();
+	void setPoints(int points);
 	
 	
 };
