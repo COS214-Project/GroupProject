@@ -15,6 +15,7 @@ private:
 	string testdriver;
 	int position;
 	long qualifyingtime;
+	int points;
 
 public:
 	Car();
@@ -47,6 +48,9 @@ public:
 	
 	void setTime(long time);
 	
+	int getPoints();
+	
+	void setPoints();
 	
 	
 };
