@@ -67,3 +67,31 @@ string Car::getName() {
 void Car::setName(string name) {
 	this->name = name;
 }
+
+string Car::getDriver(){
+	return this->driver;
+}
+
+string Car::getTestDriver(){
+	return this->testdriver;
+}
+
+string Car::getTeam(){
+	return this->team;
+}
+
+int Car::getPosition(){
+	return this->position;
+}
+
+void Car::setPosition(int pos){
+	position = pos;
+}
+
+long Car::getTime(){
+	return this->qualifyingtime;
+}
+
+void Car::setTime(long time){
+	qualifyingtime = time;
+}
