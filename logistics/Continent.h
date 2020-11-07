@@ -3,14 +3,14 @@
 
 #include "Container.h"
 #include <iostream>
+#include "Car.h"
 using namespace std;
-//#include "Car.h"
 
 class Continent {
 
 private:
 	Container* carry;
-	//Car* car;
+	Car* car;
 
 public:
 	Continent();
@@ -25,9 +25,9 @@ public:
 
 	void setCarry(Container* carry);
 
-	//Car* getCar();
+	Car* getCar();
 
-	//void setCar(Car* car);
+	void setCar(Car* car);
 };
 
 #endif
