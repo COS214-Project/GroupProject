@@ -10,6 +10,7 @@ Continent::~Continent() {
 
 void Continent::travel() {
 	cout<<"The cars are being flown to the meat"<<endl;
+	getCar()->description();
 }
 
 
@@ -21,10 +22,10 @@ void Continent::setCarry(Container* carry) {
 	this->carry = carry;
 }
 
-// Car* Continent::getCar() {
-// 	return this->car;
-// }
+Car* Continent::getCar() {
+	return this->car;
+}
 
-// void Continent::setCar(Car* car) {
-// 	this->car = car;
-// }
+void Continent::setCar(Car* car) {
+	this->car = car;
+}
