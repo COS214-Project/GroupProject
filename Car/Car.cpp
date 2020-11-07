@@ -95,4 +95,10 @@ long Car::getTime(){
 void Car::setTime(long time){
 	qualifyingtime = time;
 }
-
+int Car::getPoints(){
+	return this->points;
+}
+	
+void Car::setPoints(int points){
+	this->points = points;
+}
