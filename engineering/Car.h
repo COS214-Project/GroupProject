@@ -41,11 +41,11 @@ public:
 	
 	int getPosition();
 	
-	void setPosition();
+	void setPosition(int pos);
 	
 	long getTime();
 	
-	void setTime();
+	void setTime(long time);
 	
 	
 	
