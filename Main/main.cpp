@@ -32,7 +32,6 @@
 #include "Racing.h" 
 #include "Positioning.h" 
 #include "PointAssigning.h" 
-#include "Car.h"
 
 int main(){
   
