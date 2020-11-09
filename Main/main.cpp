@@ -16,6 +16,9 @@
 #include "EngineFactory.h"
 #include "ChassisFactory.h"
 
+#include "WindTunnel.h"
+#include "Iterator.h"
+#include "Test.h"
 
 int main(){
   
@@ -46,7 +49,7 @@ int main(){
     
     
     cout<<endl;
-    enzo->descrption();
+    enzo->description();
   
    cout<<"\n=============Creating Current Car For This Season============\n";
 
@@ -71,7 +74,16 @@ int main(){
     SF90->add(Cd->clone());
    
     cout<<endl;
-    SF90->descrption();
+    SF90->description();
+
+    cout<<"=============Testing============\n";
+    cout<<"\n=============Creating Wind Tunnel============\n";
+    WindTunnel * tunnel = new WindTunnel();
+    cout<<"Test car 5 times"<<endl;
+    for(int i = 0; i<5; i++)
+        tunnel->testCar(enzo);
+
+    cout<<"=============End Of Testing============\n";
 
     delete a;
     delete b;
