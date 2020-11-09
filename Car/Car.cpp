@@ -9,6 +9,13 @@ Car::Car() {
 	}
 }
 
+Car::Car(string n, string d, string td, string t){
+	this->name = n;
+	this->driver = d;
+	this->testdriver = td;
+	this->team = t;
+}
+
 Car::~Car() {
 	for (int i =0; i < 4; i++)
 	{
