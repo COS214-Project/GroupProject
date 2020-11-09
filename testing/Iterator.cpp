@@ -1,6 +1,16 @@
-#include "Iterator.h"
+#include"Iterator.h"
 
-Iterator::Iterator() {
-	// TODO - implement Iterator::Iterator
-	throw "Not yet implemented";
+Iterator::Iterator(Test** t){
+	index = 0;
+	tests = t;
+}
+
+Test* Iterator::current(){
+	Test * currTest;
+	currTest = tests[index];
+	return currTest;
+}
+
+void Iterator::next(){
+	index++;
 }

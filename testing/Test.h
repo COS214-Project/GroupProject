@@ -1,13 +1,14 @@
 #ifndef TEST_H
 #define TEST_H
+#include<iostream>
+#include"Car.h"
+
+
+using namespace std;
 
 class Test {
-
-
-public:
-	virtual void testCar() = 0;
-
-	virtual void createIterator() = 0;
+	public:
+		void test(Car* c);
 };
 
 #endif

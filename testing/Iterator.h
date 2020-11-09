@@ -1,13 +1,19 @@
 #ifndef ITERATOR_H
 #define ITERATOR_H
+#include<list>
+#include"Test.h"
+#include"WindTunnel.h"
 
 class Iterator {
-
-
-public:
-	Iterator();
-
-	virtual void next() = 0;
+	friend class WindTunnel;
+	public:
+		Iterator(Test** t);
+		Test* current();
+		void next();
+	protected:
+		Test** tests;
+		int index;
 };
 
 #endif
+
