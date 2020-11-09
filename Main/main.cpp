@@ -20,6 +20,14 @@
 #include "Iterator.h"
 #include "Test.h"
 
+#include "EU.h"
+#include "International.h"
+#include "Continent.h"
+#include "Contents.h"
+#include "compositeContainer.h"
+#include "Truck.h"
+#include "Crate.h"
+
 #include "FridayMorningPractice.h" 
 #include "FridayAfternoonPractice.h" 
 #include "SaturdayPractice.h" 
