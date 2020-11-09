@@ -20,6 +20,20 @@
 #include "Iterator.h"
 #include "Test.h"
 
+#include "FridayMorningPractice.h" 
+#include "FridayAfternoonPractice.h" 
+#include "SaturdayPractice.h" 
+#include "PracticeState.h" 
+#include "RaceTrack.h" 
+#include "Qualifier.h" 
+#include "Memento.h" 
+#include "TimeKeeper.h" 
+#include "RaceHandler.h" 
+#include "Racing.h" 
+#include "Positioning.h" 
+#include "PointAssigning.h" 
+#include "Car.h"
+
 int main(){
   
 //     forllow order
