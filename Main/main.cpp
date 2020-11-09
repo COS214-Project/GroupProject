@@ -37,7 +37,7 @@ int main(){
     EngineFactory* c = new EngineFactory();
     ChassisFactory* d = new ChassisFactory();
 
-    Car* enzo = new Car();
+    Car* enzo = new Car("Enzo");
     
     enzo->add(a->build(1,"2.5",0,0));
     enzo->add(b->build(1,"TAG-320B",130,4));
@@ -45,33 +45,49 @@ int main(){
     enzo->add(d->build(1,"carbon fibre",13,800));
     
     
-  
+    cout<<endl;
     enzo->descrption();
   
    cout<<"\n=============Creating Current Car For This Season============\n";
 
-    Car* SF90 = new Car();
+    Car* SF90 = new Car("SF90");
   
-    CurrentAerodynamics* Ca = new CurrentAerodynamics();
-    CurrentElectronics* Cb = new CurrentElectronics();
-    CurrentEngine* Cc = new CurrentEngine();
-    CurrentChassis* Cd = new  CurrentChassis();
+    CarPart* Ca = new CurrentAerodynamics();
+    CarPart* Cb = new CurrentElectronics();
+    CarPart* Cc = new CurrentEngine();
+    CarPart* Cd = new  CurrentChassis();
   
     cout<<"\n=============Creating Current Car Parts============\n";
     Ca = a->build(0,"2.8",0,0);
     Cb = b->build(0,"TAG-320",120,4);
-    Cc = c->build(0,"v8",12000,900)
+    Cc = c->build(0,"v8",12000,900);
     Cd = d->build(0,"carbon fibre",12,740);
   
     
     cout<<"\n=============Creating Copies For Current Car Parts And Adding Them To Car============\n";
-    SF90->add(Ca->copy());
-    SF90->add(Cb->copy());
-    SF90->add(Cc->copy());
-    SF90->add(Cd->copy());
+    SF90->add(Ca->clone());
+    SF90->add(Cb->clone());
+    SF90->add(Cc->clone());
+    SF90->add(Cd->clone());
    
-  
+    cout<<endl;
     SF90->descrption();
+
+    delete a;
+    delete b;
+    delete c;
+    delete d;
+
+    delete Ca;
+    delete Cb;
+    delete Cc;
+    delete Cd;
+
+    delete enzo;
+    delete SF90;
+
+
+
     
     return 0;
 }
