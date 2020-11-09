@@ -10,7 +10,7 @@ Continent::~Continent() {
 
 void Continent::travel() {
 	cout<<"The cars are being flown to the meat"<<endl;
-	getCar()->description();
+	//getCar()->description();
 }
 
 
