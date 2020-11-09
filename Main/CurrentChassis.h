@@ -5,23 +5,18 @@
 class CurrentChassis : public CurrentCarPart {
 
 private:
-	Tyre* tyre;
 	string material;
 	int wheelSize;
 	int weight;
 
 public:
-	CurrentChassis(string a, int b, int c_int);
-
 	CurrentChassis();
+
+	CurrentChassis(string a, int b, int c_int);
 
 	CarPart* clone();
 
 	void info();
-	
-	string getTyre();
-
-	void setTyre(Tyre* t);
 
 	string getMaterial();
 

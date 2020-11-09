@@ -9,6 +9,11 @@ using namespace std;
 // 	bool newFrontWing;
 // 	bool newRearWing;
 
+NewAerodynamics::NewAerodynamics(){
+	id="NewAerodynamis";
+	
+}
+
 NewAerodynamics::NewAerodynamics(string a, int b, int c_int){
 	id="NewAerodynamis";
 	dragCoefficint=stod(a);

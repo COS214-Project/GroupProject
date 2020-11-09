@@ -1,7 +1,14 @@
 #include "NewElectronics.h"
 
+NewElectronics::NewElectronics() {
+		id="NewElectronics";
+	
+
+	
+}
+
 NewElectronics::NewElectronics(string a, int b, int c_int) {
-		id="CurrentElectronics";
+		id="NewElectronics";
 	ECUtype=a;
 	MGUpower=b;
 	BatteryEnergy=c_int;

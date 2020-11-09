@@ -1,5 +1,10 @@
 #include "NewChassis.h"
 
+NewChassis::NewChassis() {
+	
+	id="NewChassis";
+}
+
 NewChassis::NewChassis(string a, int b, int c_int) {
 	
 	id="NewChassis";

@@ -10,6 +10,8 @@ private:
 	int BatteryEnergy;
 
 public:
+	NewElectronics();
+
 	NewElectronics(string a, int b, int c_int);
 
 	~NewElectronics();

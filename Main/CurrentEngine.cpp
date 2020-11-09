@@ -5,6 +5,12 @@
 // 	int rpm;
 // 	int bhp;
 
+CurrentEngine::CurrentEngine() {
+	// TODO - implement CurrentEngine::CurrentEngine
+	id="CurrentEngine";
+
+}
+
 CurrentEngine::CurrentEngine(string a, int b, int c_int) {
 	// TODO - implement CurrentEngine::CurrentEngine
 	id="CurrentEngine";

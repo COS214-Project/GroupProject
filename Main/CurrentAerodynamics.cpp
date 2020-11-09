@@ -1,6 +1,11 @@
 #include "CurrentAerodynamics.h"
 #include <string>
 
+CurrentAerodynamics::CurrentAerodynamics() {
+	// TODO - implement CurrentAerodynamics::CurrentAerodynamics
+	id="CurrentAerodynamcis";
+}
+
 CurrentAerodynamics::CurrentAerodynamics(string a, int b, int c_int) {
 	// TODO - implement CurrentAerodynamics::CurrentAerodynamics
 	id="CurrentAerodynamcis";

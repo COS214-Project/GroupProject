@@ -10,6 +10,8 @@ private:
 	int bhp;
 
 public:
+	NewEngine();
+
 	NewEngine(string a, int b, int c_int);
 
 	~NewEngine();

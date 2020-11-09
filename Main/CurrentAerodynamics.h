@@ -8,6 +8,8 @@ private:
 	double dragCoefficint;
 
 public:
+	CurrentAerodynamics();
+
 	CurrentAerodynamics(string a, int b, int c_int);
 
 	~CurrentAerodynamics();

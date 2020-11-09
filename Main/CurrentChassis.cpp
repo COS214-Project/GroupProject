@@ -4,24 +4,15 @@
 // 	string material;
 // 	int wheelSize;
 // 	int weight;
+CurrentChassis::CurrentChassis() {
+	id="CurrentChassis";
+}
 
 CurrentChassis::CurrentChassis(string a, int b, int c_int) {
 	id="CurrentChassis";
 	material=a;
 	wheelSize=b;
 	weight=c_int;
-}
-
-CurrentChassis::CurrentChassis() {
-	
-}
-
-CurrentChassis::~CurrentChassis() {
-
-	tyre=nullptr;
-	delete tyre;
-	tyre = nullptr;
-	
 }
 
 CarPart* CurrentChassis::clone() {
@@ -36,17 +27,6 @@ void CurrentChassis::info() {
 	cout<<"\tmaterial: "<<material<<endl;
 	cout<<"\twheelSize: "<<wheelSize<<endl;
 	cout<<"\tweight: "<<weight<<endl;
-}
-
-string CurrentChassis::getTyre()
-{
-	return tyre;
-}
-
-void CurrentChassis::setTyre(Tyre* t)
-{
-	tyre=t;
-	cout<<tyre->type()<<" set\n";
 }
 
 string CurrentChassis::getMaterial() {

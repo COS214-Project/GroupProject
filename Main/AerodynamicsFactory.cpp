@@ -22,5 +22,7 @@ CarPart* AerodynamicsFactory::build(bool current, string a, int b, int c) {
 		CurrentAerodynamics* prt = new CurrentAerodynamics(a,b,c);
 		return prt;
 	}
+
+	
 	
 }

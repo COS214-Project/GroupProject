@@ -1,7 +1,11 @@
 #include "NewEngine.h"
 
+NewEngine::NewEngine() {
+	id="NewEngine";
+}
+
 NewEngine::NewEngine(string a, int b, int c_int) {
-	id="CurrentEngine";
+	id="NewEngine";
 	type=a;
 	rpm=b;
 	bhp=c_int;

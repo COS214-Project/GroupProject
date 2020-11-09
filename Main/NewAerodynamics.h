@@ -11,6 +11,8 @@ private:
 	bool newRearWing;
 public:
 
+	NewAerodynamics();
+
 	NewAerodynamics(string a, int b, int c_int);
 
 	~NewAerodynamics();

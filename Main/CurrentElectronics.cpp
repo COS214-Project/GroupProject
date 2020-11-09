@@ -4,6 +4,11 @@
 // 	string ECUtype;
 // 	int MGUpower;
 // 	int BatteryEnergy;
+CurrentElectronics::CurrentElectronics() {
+	
+	id="CurrentElectronics";
+	
+}
 
 CurrentElectronics::CurrentElectronics(string a, int b, int c_int) {
 	
