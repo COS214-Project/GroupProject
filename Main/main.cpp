@@ -37,7 +37,7 @@ int main(){
     EngineFactory* c = new EngineFactory();
     ChassisFactory* d = new ChassisFactory();
 
-    Car* enzo = new Car("Enzo");
+    Car* enzo = new Car("Enzo","","","");
     
     enzo->add(a->build(1,"2.5",0,0));
     enzo->add(b->build(1,"TAG-320B",130,4));
@@ -50,7 +50,7 @@ int main(){
   
    cout<<"\n=============Creating Current Car For This Season============\n";
 
-    Car* SF90 = new Car("SF90");
+    Car* SF90 = new Car("SF90","","","");
   
     CarPart* Ca = new CurrentAerodynamics();
     CarPart* Cb = new CurrentElectronics();
