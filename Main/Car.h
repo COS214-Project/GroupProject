@@ -24,7 +24,7 @@ public:
 
 	~Car();
 
-	void descrption();
+	void description();
 
 	void add(CarPart* p);
 

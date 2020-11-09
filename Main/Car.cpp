@@ -35,7 +35,7 @@ Car::~Car() {
 	
 }
 
-void Car::descrption() {
+void Car::description() {
 	// TODO - implement Car::descrption
 	cout<<"model: SF90\n\n";
 	for (int i =0; i < 4; i++)
