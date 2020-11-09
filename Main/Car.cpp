@@ -14,6 +14,12 @@ Car::Car(string n, string d, string td, string t){
 	this->driver = d;
 	this->testdriver = td;
 	this->team = t;
+	
+	parts = new CarPart*[4];
+	for (int i =0; i < 4; i++)
+	{
+		parts[i] = new CarPart;
+	}
 }
 
 Car::~Car() {
