@@ -61,7 +61,7 @@ void RaceTrack::setGridOrder() {
 
 	cout << "THE GRID ORDER SET" <<endl;
 	for (int i = 0; i < 10; ++i) {
-		cout << i+1 << ". " << qualifiedCars[i]->getDriver() << "    ";
+		cout << i+1 << ". " << qualifiedCars[i]->getTeam() << " - "<< qualifiedCars[i]->getDriver() << "    ";
 		
 		if (i+1 % 2 != 0) {
 			cout << endl;

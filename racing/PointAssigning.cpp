@@ -58,10 +58,9 @@ void PointAssigning::execute(Car** cars){
 	}
 
 	int index = 0;
-	bool added = false;
 	string* leaderboard = new string[10];
-	
 	for (int i = 0; i < 10; ++i) {
+		bool added = false;
 		for (int k = 0; k < 10; k++){
 			if(teams[i] == leaderboard[k]){
 				added = true;
