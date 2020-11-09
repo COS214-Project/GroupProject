@@ -75,24 +75,14 @@ void PointAssigning::execute(Car** cars){
 		
 	}
 
+	int* teamScores = new int[10];
+	for (int i = 0; i < 10; ++i) {
+	 	teamScores[i] = -1;
+	} 
 
-/*	int k = 0;
-	while(leaderboard[k] != ""){
-
-		for (int i = 0; i < 10; ++i) {
-			if(teams[i] == leaderboard[k]){
-				break;
-			}
-		}
-
-		leaderboard[index++] = teams[i];
-		k++;
-	}*/
-
-	int* teamScores = new int[index]; 
 	int total = 0;
 	int k = 0;
-	while(k < index){
+	while(leaderboard[k] != ""){
 		total = 0;
 		for (int i = 0; i < 10; ++i) {
 			if (cars[i]->getTeam() == leaderboard[k]){
@@ -102,11 +92,10 @@ void PointAssigning::execute(Car** cars){
 		teamScores[k++] = total;
 	}
 
-
-
+	cout << "The final results!" << endl;
 	cout << "THE LEADER BOARD" << endl;
 	int l = 0;
-	while(l < index){
+	while(leaderboard[l] != ""){
 
 		int i = 0;
 		int largest = 0;
@@ -121,5 +110,5 @@ void PointAssigning::execute(Car** cars){
 		teamScores[index] = 0;
 		l++;
 	}
-	
+	cout << endl;
 }
