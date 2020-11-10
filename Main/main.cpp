@@ -41,6 +41,12 @@
 #include "Positioning.h" 
 #include "PointAssigning.h" 
 
+#include "Area.h"
+#include "Track.h"
+#include "TrackDesign.h"
+#include "TrackTraits.h"
+#include "TrackType.h"
+
 int main(){
   
 //     forllow order
@@ -105,7 +111,24 @@ int main(){
         tunnel->testCar(enzo);
 
     cout<<"=============End Of Testing============\n";
-  
+    cout<<"=============Simulation================\n";
+    Area* newArea = new Track();
+    newArea->setAreaName("Austria");
+    Track* bTrack = new Track("Red Bull Ring");
+    TrackDesign* dTrack = new TrackDesign("Race Circuit",4.326);
+    TrackTraits* eTrack = new TrackTraits("wet","anti-clockwise");
+    cout<<endl;
+    newArea->print();
+    bTrack->print();
+    dTrack->print();
+    eTrack->print();
+    newArea->add(new Track());
+    cout<<endl;
+    delete eTrack;
+    delete dTrack;
+    delete bTrack;
+    delete newArea;
+    cout<<"=============End of Simulation=========\n";
   cout<<"\n=============Logistics============\n";
     cout<<"\n=============European Race============\n";
     Continent *eu = new EU();
