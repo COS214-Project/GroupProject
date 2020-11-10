@@ -1,15 +1,15 @@
 #include "Track.h"
 
 Track::Track(){
-	cout<<"Area Constructor"<<endl;
+	//cout<<"Area Constructor"<<endl;
 }
 
 Track::Track(string trackName){
 	this->trackName = trackName;
-	cout<<"A new Area called " + trackName + " has been created."<<endl;
+	//cout<<"A new Area called " + trackName + " has been created."<<endl;
 }
 Track::~Track(){
-	cout<<trackName<<" has been destructed"<<endl;
+	//cout<<trackName<<" has been destructed"<<endl;
 }
 string Track::print() {
 	cout<<"You are currently on the " + this->trackName + " track."<<endl;

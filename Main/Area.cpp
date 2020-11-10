@@ -1,14 +1,14 @@
 #include "Area.h"
 
 Area::Area(){
-    cout<<"Area Constructor"<<endl;
+    //cout<<"Area Constructor"<<endl;
 }
 Area::Area(string AreaName){
     this->AreaName = AreaName;  
-    cout<<"Area Constructor: "<<AreaName<<endl; 
+    //cout<<"Area Constructor: "<<AreaName<<endl; 
 }
 Area::~Area(){
-    cout<<"Area Destructor"<<endl;
+    //cout<<"Area Destructor"<<endl;
 }
 string Area::getAreaName(){
     return AreaName;
