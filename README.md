@@ -1,3 +1,2 @@
 # COS214 GroupProject
-GROUP NAME: FERRARI250GTO
-Group Members: Sinothando Mabhena
+Group Name: FERRARI250GTO
