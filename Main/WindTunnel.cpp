@@ -1,7 +1,7 @@
 #include "WindTunnel.h"
 
 WindTunnel::WindTunnel(){
-	total = 10;
+	total = 400;
 	tokens = total;
 	carTests = new Test*[total];
 	for(int i = 0; i < total; i++){
@@ -19,6 +19,7 @@ void WindTunnel::testCar(Car* c){
 		it->current()->test(c);
 		it->next();
 		tokens--;
+		cout<<"Your team has "<<tokens<<" test tokens remaining.\n\n";
 	}
 	else{
 		cout<<"You have run out of tokens"<<endl;
